@@ -19,6 +19,7 @@
     "mrmlnc.vscode-duplicate"
   ],
 
+"workspaceFolder": "/workspace",
 
   // 5432 postgres
   // 6379 redis

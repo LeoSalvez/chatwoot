@@ -6,6 +6,7 @@ import ContactLabel from 'dashboard/routes/dashboard/contacts/components/Contact
 import CustomAttributes from 'dashboard/routes/dashboard/conversation/customAttributes/CustomAttributes.vue';
 import draggable from 'vuedraggable';
 import { useUISettings } from 'dashboard/composables/useUISettings';
+import AppCRCOptions from 'dashboard/routes/dashboard/conversation/AppCRCOptions.vue';
 
 export default {
   components: {
@@ -14,6 +15,7 @@ export default {
     ContactInfo,
     ContactLabel,
     CustomAttributes,
+    AppCRCOptions,
     Draggable: draggable,
   },
   props: {
@@ -122,6 +124,21 @@ export default {
                 "
               />
             </AccordionItem>
+          </div>
+          <div v-if="element.name === 'appcrc'">
+            <AccordionItem
+              :title="$t('CONVERSATION_SIDEBAR.ACCORDION.APPCRC')"
+              :is-open="isContactSidebarItemOpen('is_ct_appcrc_open')"
+              @click="value => toggleSidebarUIState('is_ct_appcrc_open', value)"
+              
+            >
+            <AppCRCOptions 
+              v-if="contact.id"
+              :telefone="contact.phone_number"
+            />
+              
+            </AccordionItem>
+
           </div>
           <div v-if="element.name === 'contact_labels'">
             <AccordionItem

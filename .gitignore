@@ -31,7 +31,7 @@ master.key
 .env
 
 public/uploads
-public/packs*
+
 
 # VIM files
 *.swp
@@ -68,7 +68,7 @@ test/cypress/videos/*
 .yalc
 yalc.lock
 
-/public/packs
+
 /public/packs-test
 /node_modules
 /yarn-error.log
