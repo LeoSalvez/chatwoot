@@ -15,7 +15,28 @@ export const routesWithPermissions = buildPermissionsFromRouter(routes);
 export const validateAuthenticateRoutePermission = (to, next, { getters }) => {
   const { isLoggedIn, getCurrentUser: user } = getters;
 
+  //if (to.path === '/app/login') {
+    //return next();  // Já estamos na página de login, então seguir normalmente
+  //}
+  function parseQueryString() {
+    let assoc = {};
+    const keyValues = location.search.substring(1).split("&");
+    keyValues.forEach(pair => {
+      const [key, value] = pair.split("=");
+      if (key && value) {
+        assoc[decodeURIComponent(key.replace(/\+/g, " "))] = decodeURIComponent(value.replace(/\+/g, " "));
+      }
+    });
+    window.queryString = assoc;
+    return assoc;
+  }
+
   if (!isLoggedIn) {
+    const queryString = parseQueryString();
+    if (queryString && queryString.k) {
+      window.location = `/app/login?k=${queryString.k}`;
+      return '/app/login';
+    }
     window.location = '/app/login';
     return '/app/login';
   }

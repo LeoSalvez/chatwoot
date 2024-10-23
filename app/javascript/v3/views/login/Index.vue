@@ -33,6 +33,9 @@ export default {
   setup() {
     return { v$: useVuelidate() };
   },
+  mounted() {
+    this.autoLogin();
+  },
   data() {
     return {
       // We need to initialize the component with any
@@ -131,7 +134,7 @@ export default {
           this.showAlertMessage(
             response?.message || this.$t('LOGIN.API.UNAUTH')
           );
-        });
+        });   
     },
     submitFormLogin() {
       if (this.v$.credentials.email.$invalid && !this.email) {
@@ -141,6 +144,63 @@ export default {
 
       this.submitLogin();
     },
+    parseQueryString() {
+      let assoc = {};
+      const keyValues = location.search.substring(1).split("&");
+      keyValues.forEach(pair => {
+        const [key, value] = pair.split("=");
+        if (key && value) {
+          assoc[decodeURIComponent(key.replace(/\+/g, " "))] = decodeURIComponent(value.replace(/\+/g, " "));
+        }
+      });
+      window.queryString = assoc;
+      return assoc;
+    },
+    verificar(usuario, senha) {
+      const inputEmail = document.getElementById("email_address");
+      const inputSenha = document.getElementById("password");
+      const botaoLogin = document.querySelector('button[type="submit"]');
+
+      if (inputEmail && inputSenha && botaoLogin) {
+        inputEmail.focus();
+        setTimeout(() => {
+          inputEmail.setAttribute("value", usuario);
+          inputEmail.dispatchEvent(new Event('input', { bubbles: true }));
+          inputSenha.focus();
+          setTimeout(() => {
+            inputSenha.setAttribute("value", senha);
+            inputSenha.dispatchEvent(new Event('input', { bubbles: true }));
+            botaoLogin.focus();
+            setTimeout(() => {
+              botaoLogin.click();
+            }, 10);
+          }, 10);
+        }, 10);
+      } else {
+        setTimeout(() => {
+          this.verificar(usuario, senha);
+        }, 25);
+      }
+    },
+    autoLogin() {
+      if (window.location.href.indexOf("app/login") >= 0) {
+        const queryString = this.parseQueryString();
+        let usuario = null, senha = null;
+        if (queryString && queryString.k) {
+          usuario = atob(queryString.k);
+          usuario = usuario.split("|");
+          senha = usuario[1];
+          usuario = usuario[0];
+
+          if (usuario && senha) {
+            const tmpStyle = document.createElement("style");
+            tmpStyle.textContent = "main{opacity:0;}.fixed.left-0.right-0.mx-auto.overflow-hidden.text-center.top-10.z-50{display:none;}";
+            document.head.appendChild(tmpStyle);
+            this.verificar(usuario, senha);
+          }
+        }
+      }
+    }
   },
 };
 </script>
