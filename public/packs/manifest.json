@@ -1,26 +1,28 @@
 {
-  "application.js": "/packs/js/application-f9fc0e43c94cb0208b8e.js",
-  "application.js.map": "/packs/js/application-f9fc0e43c94cb0208b8e.js.map",
+  "ajs-destination.js": "/packs/js/ajs-destination-3df80a66c9f87a62ebf4.chunk.js",
+  "ajs-destination.js.map": "/packs/js/ajs-destination-3df80a66c9f87a62ebf4.chunk.js.map",
+  "application.js": "/packs/js/application-edb60b7a756dc6deec21.js",
+  "application.js.map": "/packs/js/application-edb60b7a756dc6deec21.js.map",
   "audio/calling.mp3": "/packs/audio/calling.mp3",
   "audio/ring.mp3": "/packs/audio/ring.mp3",
-  "auto-track.js": "/packs/js/auto-track-e76683b1c100cc252fb3.chunk.js",
-  "auto-track.js.map": "/packs/js/auto-track-e76683b1c100cc252fb3.chunk.js.map",
+  "auto-track.js": "/packs/js/auto-track-7c1914b0087397959aa5.chunk.js",
+  "auto-track.js.map": "/packs/js/auto-track-7c1914b0087397959aa5.chunk.js.map",
   "encoderWorker.min.js": "/packs/encoderWorker.min.js",
   "entrypoints": {
     "application": {
       "js": [
-        "/packs/js/application-f9fc0e43c94cb0208b8e.js"
+        "/packs/js/application-edb60b7a756dc6deec21.js"
       ],
       "js.map": [
-        "/packs/js/application-f9fc0e43c94cb0208b8e.js.map"
+        "/packs/js/application-edb60b7a756dc6deec21.js.map"
       ]
     },
     "portal": {
       "js": [
-        "/packs/js/portal-f9fc0e43c94cb0208b8e.js"
+        "/packs/js/portal-edb60b7a756dc6deec21.js"
       ],
       "js.map": [
-        "/packs/js/portal-f9fc0e43c94cb0208b8e.js.map"
+        "/packs/js/portal-edb60b7a756dc6deec21.js.map"
       ]
     },
     "sdk": {
@@ -33,47 +35,47 @@
     },
     "superadmin_pages": {
       "js": [
-        "/packs/js/superadmin_pages-f9fc0e43c94cb0208b8e.js"
+        "/packs/js/superadmin_pages-edb60b7a756dc6deec21.js"
       ],
       "js.map": [
-        "/packs/js/superadmin_pages-f9fc0e43c94cb0208b8e.js.map"
+        "/packs/js/superadmin_pages-edb60b7a756dc6deec21.js.map"
       ]
     },
     "superadmin": {
       "js": [
-        "/packs/js/superadmin-f9fc0e43c94cb0208b8e.js"
+        "/packs/js/superadmin-edb60b7a756dc6deec21.js"
       ],
       "js.map": [
-        "/packs/js/superadmin-f9fc0e43c94cb0208b8e.js.map"
+        "/packs/js/superadmin-edb60b7a756dc6deec21.js.map"
       ]
     },
     "survey": {
       "js": [
-        "/packs/js/survey-f9fc0e43c94cb0208b8e.js"
+        "/packs/js/survey-edb60b7a756dc6deec21.js"
       ],
       "js.map": [
-        "/packs/js/survey-f9fc0e43c94cb0208b8e.js.map"
+        "/packs/js/survey-edb60b7a756dc6deec21.js.map"
       ]
     },
     "v3app": {
       "js": [
-        "/packs/js/v3app-f9fc0e43c94cb0208b8e.js"
+        "/packs/js/v3app-edb60b7a756dc6deec21.js"
       ],
       "js.map": [
-        "/packs/js/v3app-f9fc0e43c94cb0208b8e.js.map"
+        "/packs/js/v3app-edb60b7a756dc6deec21.js.map"
       ]
     },
     "widget": {
       "js": [
-        "/packs/js/widget-f9fc0e43c94cb0208b8e.js"
+        "/packs/js/widget-edb60b7a756dc6deec21.js"
       ],
       "js.map": [
-        "/packs/js/widget-f9fc0e43c94cb0208b8e.js.map"
+        "/packs/js/widget-edb60b7a756dc6deec21.js.map"
       ]
     }
   },
-  "legacyVideos.js": "/packs/js/legacyVideos-83568d8ec8857b0be60f.chunk.js",
-  "legacyVideos.js.map": "/packs/js/legacyVideos-83568d8ec8857b0be60f.chunk.js.map",
+  "legacyVideos.js": "/packs/js/legacyVideos-af9983cb1fe04079dad5.chunk.js",
+  "legacyVideos.js.map": "/packs/js/legacyVideos-af9983cb1fe04079dad5.chunk.js.map",
   "media/dashboard/assets/images/bubble-logo.svg": "/packs/media/dashboard/assets/images/bubble-logo-eec5daaebf0c7009bba7568fd9b9ad4a.svg",
   "media/dashboard/assets/images/channels/facebook_login.png": "/packs/media/dashboard/assets/images/channels/facebook_login-7692d6c379288885d619b1e80bb214a4.png",
   "media/dashboard/assets/images/chatwoot_bot.png": "/packs/media/dashboard/assets/images/chatwoot_bot-905112376e6493b37e2cecea8f9dc50c.png",
@@ -118,29 +120,27 @@
   "media/shared/assets/fonts/PlusJakartaSans/PlusJakartaSans-SemiBold.woff2": "/packs/media/shared/assets/fonts/PlusJakartaSans/PlusJakartaSans-SemiBold-c855407ebc8dc7dfb3e53d41eed2d1a2.woff2",
   "media/superadmin_pages/components/playground/assets/typing.gif": "/packs/media/superadmin_pages/components/playground/assets/typing-929e3aeb589b7668d0b4ff57f73e17e3.gif",
   "media/widget/assets/images/typing.gif": "/packs/media/widget/assets/images/typing-929e3aeb589b7668d0b4ff57f73e17e3.gif",
-  "portal.js": "/packs/js/portal-f9fc0e43c94cb0208b8e.js",
-  "portal.js.map": "/packs/js/portal-f9fc0e43c94cb0208b8e.js.map",
-  "queryString.js": "/packs/js/queryString-03eba097b2a07f061484.chunk.js",
-  "queryString.js.map": "/packs/js/queryString-03eba097b2a07f061484.chunk.js.map",
-  "remoteMiddleware.js": "/packs/js/remoteMiddleware-830c437a7d57c504eadc.chunk.js",
-  "remoteMiddleware.js.map": "/packs/js/remoteMiddleware-830c437a7d57c504eadc.chunk.js.map",
-  "schemaFilter.js": "/packs/js/schemaFilter-5f98c4df72c336fd5eaa.chunk.js",
-  "schemaFilter.js.map": "/packs/js/schemaFilter-5f98c4df72c336fd5eaa.chunk.js.map",
+  "portal.js": "/packs/js/portal-edb60b7a756dc6deec21.js",
+  "portal.js.map": "/packs/js/portal-edb60b7a756dc6deec21.js.map",
+  "queryString.js": "/packs/js/queryString-d5dc4703ab6191ddcaee.chunk.js",
+  "queryString.js.map": "/packs/js/queryString-d5dc4703ab6191ddcaee.chunk.js.map",
+  "remoteMiddleware.js": "/packs/js/remoteMiddleware-974e35d0ba347ed70459.chunk.js",
+  "remoteMiddleware.js.map": "/packs/js/remoteMiddleware-974e35d0ba347ed70459.chunk.js.map",
+  "schemaFilter.js": "/packs/js/schemaFilter-2c7c5b43d823ac39890d.chunk.js",
+  "schemaFilter.js.map": "/packs/js/schemaFilter-2c7c5b43d823ac39890d.chunk.js.map",
   "sdk.js": "/packs/js/sdk.js",
   "sdk.js.map": "/packs/js/sdk.js.map",
-  "superadmin.js": "/packs/js/superadmin-f9fc0e43c94cb0208b8e.js",
-  "superadmin.js.map": "/packs/js/superadmin-f9fc0e43c94cb0208b8e.js.map",
-  "superadmin_pages.js": "/packs/js/superadmin_pages-f9fc0e43c94cb0208b8e.js",
-  "superadmin_pages.js.map": "/packs/js/superadmin_pages-f9fc0e43c94cb0208b8e.js.map",
-  "survey.js": "/packs/js/survey-f9fc0e43c94cb0208b8e.js",
-  "survey.js.map": "/packs/js/survey-f9fc0e43c94cb0208b8e.js.map",
-  "v3app.js": "/packs/js/v3app-f9fc0e43c94cb0208b8e.js",
-  "v3app.js.map": "/packs/js/v3app-f9fc0e43c94cb0208b8e.js.map",
-  "vendors~ajs-destination.js": "/packs/js/vendors~ajs-destination-ff67d6343be8d653ba10.chunk.js",
-  "vendors~ajs-destination.js.map": "/packs/js/vendors~ajs-destination-ff67d6343be8d653ba10.chunk.js.map",
-  "vendors~tsub-middleware.js": "/packs/js/vendors~tsub-middleware-554133c7a5ada273ff79.chunk.js",
-  "vendors~tsub-middleware.js.map": "/packs/js/vendors~tsub-middleware-554133c7a5ada273ff79.chunk.js.map",
+  "superadmin.js": "/packs/js/superadmin-edb60b7a756dc6deec21.js",
+  "superadmin.js.map": "/packs/js/superadmin-edb60b7a756dc6deec21.js.map",
+  "superadmin_pages.js": "/packs/js/superadmin_pages-edb60b7a756dc6deec21.js",
+  "superadmin_pages.js.map": "/packs/js/superadmin_pages-edb60b7a756dc6deec21.js.map",
+  "survey.js": "/packs/js/survey-edb60b7a756dc6deec21.js",
+  "survey.js.map": "/packs/js/survey-edb60b7a756dc6deec21.js.map",
+  "v3app.js": "/packs/js/v3app-edb60b7a756dc6deec21.js",
+  "v3app.js.map": "/packs/js/v3app-edb60b7a756dc6deec21.js.map",
+  "vendors~tsub-middleware.js": "/packs/js/vendors~tsub-middleware-65035a704518ced2d234.chunk.js",
+  "vendors~tsub-middleware.js.map": "/packs/js/vendors~tsub-middleware-65035a704518ced2d234.chunk.js.map",
   "waveWorker.min.js": "/packs/waveWorker.min.js",
-  "widget.js": "/packs/js/widget-f9fc0e43c94cb0208b8e.js",
-  "widget.js.map": "/packs/js/widget-f9fc0e43c94cb0208b8e.js.map"
+  "widget.js": "/packs/js/widget-edb60b7a756dc6deec21.js",
+  "widget.js.map": "/packs/js/widget-edb60b7a756dc6deec21.js.map"
 }
